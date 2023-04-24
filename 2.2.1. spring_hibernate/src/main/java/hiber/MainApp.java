@@ -1,5 +1,6 @@
 package hiber;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import hiber.config.AppConfig;
 import hiber.model.User;
 import hiber.service.UserService;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class MainApp {
-   public static void main(String[] args) throws SQLException {
+   public static void main(MysqlxDatatypes.Scalar.String[] args) throws SQLException {
       AnnotationConfigApplicationContext context = 
             new AnnotationConfigApplicationContext(AppConfig.class);
 
