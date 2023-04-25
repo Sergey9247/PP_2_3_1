@@ -50,12 +50,12 @@ public class MainApp {
            System.out.println();
        }
 
-       User user = userService.getSingelUserByCarModelAndCarSeries("BMW", 6);
-       if (user == null) {
-           System.out.println("Человека с такой машиной нет в БД");
-       } else {
-           System.out.println("По заданным характеристикам был найден пользователь :" + "\n" + user);
-       }
+//       User user = userService.getSingelUserByCarModelAndCarSeries("BMW", 6);
+//       if (user == null) {
+//           System.out.println("Человека с такой машиной нет в БД");
+//       } else {
+//           System.out.println("По заданным характеристикам был найден пользователь :" + "\n" + user);
+//       }
 
        context.close();
    }
