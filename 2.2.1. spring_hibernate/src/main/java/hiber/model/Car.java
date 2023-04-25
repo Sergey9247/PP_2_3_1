@@ -53,15 +53,6 @@ public class Car {
         this.series = series;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", model='" + model + '\'' +
-                ", series=" + series +
-                '}';
-    }
-
     public User getUser() {
         return user;
     }
@@ -81,5 +72,14 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(model, series, user);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", series=" + series +
+                '}';
     }
 }

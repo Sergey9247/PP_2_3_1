@@ -21,7 +21,7 @@ public class MainApp {
 //       userService.add(new User("User3", "Lastname3", "user3@mail.ru"));
 //       userService.add(new User("User4", "Lastname4", "user4@mail.ru"));
 
-//       List<User> users1 = userService.listUsers();
+//       List<User> users1 = userService.getListUsers;
 //       for (User user : users1) {
 //           System.out.println("Id = "+user.getId());
 //           System.out.println("First Name = "+user.getFirstName());
@@ -40,7 +40,7 @@ public class MainApp {
        userService.add(new User("User7", "Lastname7", "user7@mail.ru", car3));
        userService.add(new User("User8", "Lastname8", "user8@mail.ru", car4));
 
-       List<User> users2 = userService.listUsers();
+       List<User> users2 = userService.getListUsers();
        for (User user : users2) {
            System.out.println("Id = " + user.getId());
            System.out.println("First Name = " + user.getFirstName());

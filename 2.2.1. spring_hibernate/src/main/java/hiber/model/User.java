@@ -79,16 +79,6 @@ public class User {
       this.car = userCar;
    }
 
-   @Override
-   public String toString() {
-      return "User{" +
-              "id=" + id +
-              ", firstName='" + firstName + '\'' +
-              ", lastName='" + lastName + '\'' +
-              ", email='" + email + '\'' +
-              ", car=" + car +
-              '}';
-   }
 
    @Override
    public boolean equals(Object o) {
@@ -101,5 +91,16 @@ public class User {
    @Override
    public int hashCode() {
       return Objects.hash(firstName, lastName, email);
+   }
+
+   @Override
+   public String toString() {
+      return "User{" +
+              "id=" + id +
+              ", firstName='" + firstName + '\'' +
+              ", lastName='" + lastName + '\'' +
+              ", email='" + email + '\'' +
+              ", car=" + car +
+              '}';
    }
 }
