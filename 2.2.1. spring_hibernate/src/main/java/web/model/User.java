@@ -1,6 +1,10 @@
 package web.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 
@@ -12,12 +16,18 @@ public class User {
    private long id;
 
    @Column
+   @NotEmpty(message = "Name should not be empty")
+   @Size(min = 2, max = 30, message = "Name should be between 2 and 30 characters")
    private String name;
 
    @Column
+   @NotEmpty(message = "Name should not be empty")
+   @Size(min = 2, max = 30, message = "Name should be between 2 and 30 characters")
    private String surname;
 
    @Column
+   @Min(value = 0, message = "min age = 0")
+   @Max(value = 120, message = "max age = 120")
    private int age;
 
    public User() {
